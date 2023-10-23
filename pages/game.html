@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treewax Hunt</title>
+</head>
+
+<body style="background-image: url(../images/bgimg.jpg);">
+    <div id="game-container">
+        <div class="image-style" id="puzzle-pieces">
+            <img id="puzzle-image" src="../images/QR_1.png" width="250" height="250"></imgsrc>
+        </div>
+        <div class="image-style" id="video-container">
+            <video id="qr-video" width="350" height="175"></video>
+        </div>
+        <div class="game-container-style" id="game-messages"></div>
+    </div>
+    <div class="game-container-style">
+        <iframe 
+        style="border: 0; width: 275px; height: 42px;" 
+        src="https://bandcamp.com/EmbeddedPlayer/album=2296845622/size=small/bgcol=ffffff/linkcol=0687f5/track=2493927052/transparent=true/" 
+        seamless>
+            <a href="https://treewax.bandcamp.com/album/only-yesterday">Only Yesterday by Treewax</a>
+        </iframe>
+    </iframe>
+    </div>
+    <div class="game-container-style">
+         <button class="btn" id="scan-again">Scan again</button>  
+    </div>
+    <div class="game-container-style">
+        <button class="btn" id="log-out">Logout</button>
+    </div>
+    <div class="game-container-style">
+        <b style="margin-right: 5px">Camera:</b>
+        <select id="cam-list">
+            <option value="environment" selected>Back (default)</option>
+            <option value="user">Front</option>
+        </select>
+    </div>
+    <div class="game-container-style">
+        <span id="cam-qr-result">None</span>
+    </div>
+    <div class="game-container-style">
+        <a href="https://open.spotify.com/intl-pt/artist/4gmnmPWkxVZvkBa1ql63Ba?si=43303084bae141a5&nd=1" target="_blank">
+            <img style="margin-right: 20px" src="../images/spotify.png" alt="Spotify" width="40" height="40">
+        </a>
+        <a href="https://treewax.bandcamp.com" target="_blank">
+            <img style="margin-right: 20px" src="../images/bc.png" alt="Bandcamp" width="40" height="40">
+        </a>
+        <a href="https://www.youtube.com/channel/UCMwi496vDZ7ssOes-RqLGrg" target="_blank">
+            <img src="../images/yt.png" alt="Youtube" width="40" height="40">
+        </a>
+    </div>
+    <script src="../scripts/scanner/qr-scanner.legacy.min.js"></script>
+    <script type="module" src="../scripts/game-script.js"></script>
+    <style>
+        .btn {
+            border: 3px solid black;
+            font-size: 15px;
+            color: black;
+            font-weight: bold;
+            width: 110px;
+            height: 40px;
+            border-radius: 10px;
+            margin-right: 10px;
+            margin-bottom: 5px;
+            cursor: pointer;
+        }
+
+        .game-container-style {
+            margin: auto;
+            margin-bottom: 20px;
+            display: flex;  
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image-style {
+            margin-bottom: 20px;
+            display: flex;  
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</body>
+
+</html>
