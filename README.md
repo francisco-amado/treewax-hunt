@@ -1,5 +1,5 @@
 # treewax-hunt
-GeoGuessr inspired web game created for the band Treewax, written in HTML, CSS and pure JavaScript, using Firebase for authentication and database.<br>
+GeoGuessr inspired web game created for the band Treewax, written in HTML, CSS and vanilla JavaScript with modules.<br>
 QR Scanner from https://github.com/nimiq/qr-scanner.<br>
 Optimized for mobile devices. <br>
 Will not work on embedded browsers.<br>
