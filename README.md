@@ -4,3 +4,4 @@ QR Scanner from https://github.com/nimiq/qr-scanner.<br>
 Optimized for mobile devices. <br>
 Will not work on embedded browsers.<br>
 Sensitive information is omitted here for security purposes.
+To play, access www.treewax.net and click on the Treewax Hunt image on the main page.
