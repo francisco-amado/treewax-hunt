@@ -34,8 +34,8 @@
  };
 
  const createTimestamp = async (userName) => {
-    const milisseconds = new Date();
-    const timestamp = milisseconds.toString();
+    const currentDate = new Date();
+    const timestamp = currentDate.toString();
 
     await addDoc(timestampRef, {
         finishDate: timestamp,
@@ -123,6 +123,7 @@
         scanner.stop();
      } else {
         const previousPieces = finalPuzzle.slice(0, resultIndex);
+
         if ((previousPieces.every(piece => puzzlePieces.includes(piece))) || (puzzlePieces.length === 0 && finalPuzzle[0] === result.data)) {
             puzzlePieces.push(result.data);
             savePuzzle(puzzlePieces);
@@ -149,6 +150,7 @@
 
  const logout = () => {
     const auth = getAuth();
+    
     signOut(auth).then(() => {
     location.href = "login.html"
  }).catch((error) => {
